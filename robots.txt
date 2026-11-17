@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /
+Allow: /cgv
+Allow: /gtc
+Allow: /MAR-CGV-2026-3.0.pdf
+Allow: /MAR-GTC-2026-3.0.pdf
+Sitemap: https://marilean.fr/sitemap.xml

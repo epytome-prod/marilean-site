@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0D0F10">
+  <title>Marilean | A new site is taking shape</title>
+  <meta name="description" content="Our new website is taking shape. In the meantime, explore our work at epytome.fr.">
+  <meta name="robots" content="noindex,follow">
+  <link rel="canonical" href="https://marilean.fr/">
+  <link rel="icon" href="/assets/favicon-noir.svg" type="image/svg+xml">
+  <link rel="preload" href="/assets/Sora-Variable.ttf" as="font" type="font/ttf" crossorigin>
+  <style>
+    @font-face{font-family:Sora;src:url('/assets/Sora-Variable.ttf') format('truetype');font-weight:100 800;font-display:swap}
+    :root{color-scheme:dark;--ink:#0D0F10;--mint:#50E7E0;--paper:#F2F0EB}
+    *{box-sizing:border-box}html{background:var(--ink)}body{margin:0;color:var(--paper);font-family:Sora,Arial,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit}button{font:inherit}a:focus-visible,button:focus-visible{outline:2px solid var(--paper);outline-offset:7px}::selection{color:var(--ink);background:var(--mint)}
+    .page{max-width:1920px;min-height:100svh;margin:auto;padding:36px 5vw 24px;display:flex;flex-direction:column;overflow:hidden}
+    .top{display:flex;align-items:center;justify-content:space-between;gap:24px;font-size:12px;font-weight:400;color:#b5b7b5}.top a{text-decoration:none}.status{display:flex;align-items:center;gap:10px}.dot{width:7px;height:7px;border-radius:50%;background:var(--mint)}
+    main{display:grid;grid-template-columns:1.45fr 1fr;gap:6vw;align-items:center;flex:1;padding:48px 0 48px}
+    .eyebrow{margin:0 0 24px;color:var(--mint);font-size:12px;font-weight:500}
+    h1{font-size:clamp(48px,6.4vw,108px);line-height:1.04;letter-spacing:-.065em;font-weight:400;margin:0 0 28px}h1 span{display:block;color:var(--mint)}
+    .intro{font-size:clamp(14px,1.1vw,17px);line-height:1.8;color:#b5b7b5;max-width:430px;margin:0 0 30px}
+    .cta{display:inline-flex;align-items:center;gap:42px;background:var(--mint);color:var(--ink);text-decoration:none;padding:18px 24px;font-size:14px;font-weight:500;border:1px solid var(--mint);border-radius:2px;transition:background .2s,color .2s}.cta svg{width:22px;height:22px;transition:transform .2s}.cta:hover{background:var(--paper);border-color:var(--paper)}.cta:hover svg{transform:translate(3px,-3px)}
+    .redirect{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;font-size:11px;color:#a3a7a5;margin-top:20px;min-height:24px}.redirect button{background:none;border:0;color:var(--paper);font-size:11px;cursor:pointer;text-underline-offset:4px;text-decoration:underline;padding:4px 0}.redirect[hidden]{display:none}
+    .art{width:100%;aspect-ratio:1/1.1;overflow:hidden;align-self:stretch;display:flex;align-items:center}.art svg{width:100%;height:auto;overflow:visible}
+    .signature{width:100%;height:auto;display:block;margin:0 0 34px}
+    footer{border-top:1px solid #383c3c;padding-top:20px;display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:10px;line-height:1.6;color:#a3a7a5}footer nav{display:flex;flex-wrap:wrap;gap:12px 24px}footer a{text-decoration:none}footer a:hover,.top a:hover{text-decoration:underline;text-underline-offset:4px}
+    @keyframes arrive{from{opacity:0;transform:translate(60px,30px)}to{opacity:1;transform:translate(0,0)}}
+    @media(min-width:1600px){main{padding-block:90px}.signature{margin-bottom:44px}}
+    @media(max-width:700px){.page{padding:24px 6vw 20px}.top{font-size:10px;gap:16px}main{position:relative;display:block;padding:64px 0 52px}.copy{position:relative;z-index:1}h1{font-size:clamp(44px,10.5vw,70px);letter-spacing:-.06em}.intro{max-width:310px;font-size:13px}.eyebrow{font-size:11px;margin-bottom:20px}.art{display:none}.cta{padding:17px 21px;font-size:13px}.redirect{font-size:10px;gap:4px 12px}.redirect button{font-size:10px}.signature{margin:0 0 28px}footer{align-items:flex-start;flex-direction:column;gap:12px;font-size:9px}footer nav{gap:10px 20px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="top"><span class="status"><span class="dot" aria-hidden="true"></span>New website in progress</span><a href="mailto:contact@epytome.fr">Get in touch ↗</a></header>
+    <main>
+      <div class="copy">
+        <p class="eyebrow">A new site is taking shape.</p>
+        <h1>A new frame.<span>Coming soon.</span></h1>
+        <p class="intro">We’re building our new home.<br>In the meantime, explore our work at epytome.fr.</p>
+        <a class="cta" href="https://epytome.fr/">Explore our work<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 18L15 6H6V2H22V18H18V9L6 21Z"/></svg></a>
+        <div class="redirect" id="redirect" hidden><span id="countdown">Continuing to epytome.fr in 12s</span><button id="pause" type="button">Stay here</button></div>
+        <noscript><p class="redirect">Visit epytome.fr using the link above.</p></noscript>
+      </div>
+      <div class="art" aria-hidden="true"><svg viewBox="0 0 600 650" fill="none"><path class="plane" d="M130 750V310C130 194 224 142 340 170L900 304V750Z" fill="#50E7E0"/></svg></div>
+    </main>
+    <img class="signature" src="/assets/wordmark-turquoise.svg" width="2153" height="412" alt="Marilean">
+    <footer><span>© 2026 Marilean</span><nav aria-label="Legal"><a href="/gtc/">Terms of sale</a><a href="/cgv/" lang="fr">CGV</a><a href="/legal.html">Legal notice</a><a href="/privacy.html">Privacy</a></nav></footer>
+  </div>
+  <script>
+    (() => {
+      const panel = document.getElementById('redirect');
+      const label = document.getElementById('countdown');
+      const pause = document.getElementById('pause');
+      let remaining = 12000;
+      let paused = false;
+      let previous = performance.now();
+      panel.hidden = false;
+      const timer = setInterval(() => {
+        const now = performance.now();
+        if (!document.hidden && !paused) remaining -= now - previous;
+        previous = now;
+        if (paused) return;
+        label.textContent = `Continuing to epytome.fr in ${Math.max(0, Math.ceil(remaining / 1000))}s`;
+        if (remaining <= 0) { clearInterval(timer); window.location.replace('https://epytome.fr/'); }
+      }, 100);
+      pause.addEventListener('click', () => {
+        paused = true;
+        clearInterval(timer);
+        label.textContent = 'Automatic redirect paused.';
+        pause.hidden = true;
+      });
+    })();
+  </script>
+</body>
+</html>
